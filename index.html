@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VETadmin | Inicio</title>
+
+    <!-- CSS Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Font Awesome 6.1.1-->
+    <link href="./css/all.min.css" rel="stylesheet">
+
+    <!-- Google Font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilo personalizada -->
+    <link href="./css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+<!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div id="modal-dialog" class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h5 class="modal-title text-white" id="modalLabel">Admisionando Mascota</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="modal-body" class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-times"></i> Cerrar</button>
+          <button type="button" class="btn btn-success"><i class="fa-solid fa-save"></i> Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="d-flex">
+        <div id="sidemenu-container"></div>
+
+        <div class="w-100">
+            <div id="nav-container"></div>
+<!-- Contenido principal-->
+              <div id="contenido" class="pt-3 px-3">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h4>Bienvenido Marvin Perez</h4>                      
+                    </div>
+                  </div>
+                  
+                  <div class="row mt-4">
+                    <div class="col-12">
+                      <h4 class="text-grey">Información de Interes</h4>
+                    </div>
+                  </div>
+
+                  <!-- Cards -->
+                  <div class="row">
+                    <!-- Card 1-->
+                    <div class="col-md-4">
+                      <div class="card text-bg-primary shadow">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6">
+                              <h5 class="card-title fw-bold">
+                                Pacienes <br> 
+                                Atendidos
+                              </h5>
+                            </div>
+                            <div class="col-4">
+                              <h2 class="fw-bold text-center display-5">8</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card 2-->
+                    <div class="col-md-4">
+                      <div class="card text-bg-success shadow">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6">
+                              <h5 class="card-title fw-bold">
+                                Facturas <br> 
+                                Emitidas
+                              </h5>
+                            </div>
+                            <div class="col-4">
+                              <h2 class="fw-bold text-center display-5">18</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Card 3-->
+                    <div class="col-md-4">
+                      <div class="card text-bg-danger shadow">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6">
+                              <h5 class="card-title fw-bold">
+                                Pacienes <br> 
+                                Ingresados
+                              </h5>
+                            </div>
+                            <div class="col-4">
+                              <h2 class="fw-bold text-center display-5">6</h2>
+                            </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <div class="row mt-5">
+                    <div class="col-12">
+                      <h4 class="text-grey">Accesos Rápidos</h4>
+                    </div>
+                  </div>
+
+                  <!-- Botonera Accesos Rapidos -->
+                  <div class="row">
+                    <!-- Boton 1-->
+                    <div class="col-md-3 mb-4">
+                      <button onclick="mostrarFormAdmisionarPaciente()" class="btn btn-primary btn-lg fw-bold text-start">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Admisionar paciente
+                          </div>
+                        </div>
+                          </button>
+                    </div>
+
+                    <!-- Boton 2-->
+                    <div class="col-md-3 mb-4">
+                      <button onclick="mostrarFormFacturarMedicamento()" class="btn btn-primary btn-lg fw-bold text-start">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-pills display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Facturar medicamento
+                          </div>
+                        </div>
+                          </button>
+                    </div>
+
+                    <!-- Boton 3-->
+                    <div class="col-md-3 mb-4">
+                      <button class="btn btn-primary btn-lg fw-bold text-start">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-user-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Registrar cliente
+                          </div>
+                        </div>
+                          </button>
+                    </div>
+
+                    <!-- Boton 4-->
+                    <div class="col-md-3 mb-4">
+                      <button class="btn btn-primary btn-lg fw-bold text-start">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-dog display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Registrar mascota
+                          </div>
+                        </div>
+                          </button>
+                    </div>
+
+                    <!-- Boton 5-->
+                    <div class="col-md-3 mb-4">
+                      <button class="btn btn-primary btn-lg fw-bold text-start">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-bed-pulse display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Ingresar paciente
+                          </div>
+                        </div>
+                          </button>
+                    </div>
+
+                    <!-- Boton 6-->
+                    <div class="col-md-3 mb-4">
+                      <button class="btn btn-primary btn-lg fw-bold text-start">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-paw display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Dar de alta
+                          </div>
+                        </div>
+                          </button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="/js/site.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

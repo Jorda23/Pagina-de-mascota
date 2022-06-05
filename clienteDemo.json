@@ -1,0 +1,28 @@
+{
+    "_objectid": 4343432325325432,
+    "codigoCliente": "2356",
+    "nombre": "Pedro Pablo",
+    "apellido": "Mendoza García",
+    "noIdentificacion": "001-010101-0000A",
+    "direccion": "Del palo de mango que da jocotes, 2c. abajo",
+    "correo": "pedro@mendoza.com",
+    "telefono": "22334455",
+    "mascotas":[
+        {
+            "codigoMascota": "2356-1",
+            "nombreMascota": "Polo",
+            "tipoMascota": "Perro",
+            "raza": "mixta",
+            "sexo": "macho",
+            "fechaNacimiento": "04/09/2020"
+        },
+        {
+            "codigoMascota": "2356-2",
+            "nombreMascota": "Bruno Stuart",
+            "tipoMascota": "Perro",
+            "raza": "mixta",
+            "sexo": "macho",
+            "fechaNacimiento": "14/11/2021"
+        }
+    ]
+}
